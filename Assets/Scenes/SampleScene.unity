@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 643920315}
   - component: {fileID: 643920314}
   - component: {fileID: 643920318}
+  - component: {fileID: 643920319}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -246,7 +247,36 @@ MonoBehaviour:
   Hp: 100
   playName: "\uD64D\uAE38\uB3D9"
   isAlive: 1
-  Speed: 3
+  Speed: 20
+  JumpForce: 5
+  rb: {fileID: 643920319}
+--- !u!54 &643920319
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 643920313}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 80
+  m_CollisionDetection: 0
 --- !u!1 &680925583
 GameObject:
   m_ObjectHideFlags: 0
